@@ -30,6 +30,7 @@ Example in Python:
 
 ```python
 with open("words.txt") as f:
-    words = set(f.read().splitlines())
+    words = f.read().splitlines()
 
-print("example" in words)
+word = "example"
+print(word in words)  # Check if the word exists in the list
